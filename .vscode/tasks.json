@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-pthread",
+                "-g",
+                "${workspaceFolder}/thread_example.c",
+                "-o",
+                "${workspaceFolder}/thread_example"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
